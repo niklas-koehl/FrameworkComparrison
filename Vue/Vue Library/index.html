@@ -1,0 +1,19 @@
+<html>
+    <head>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <p
+                v-for="product in products"
+                v-bind:key="product.id"
+                v-bind:title="product.title"
+            >
+                {{product.title}}
+            </p>
+            <button v-on:click="addNewProduct">Add</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

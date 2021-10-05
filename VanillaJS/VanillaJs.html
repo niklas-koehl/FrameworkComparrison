@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>        
+        <div id="root"></div>
+        <button onclick="addText()">Add</button>
+        <script>
+            function addText(){                
+                var textnode = document.createTextNode("VANNILAJS TEST ITEM");
+                var textElement = document.createElement('p')
+                textElement.appendChild(textnode)             
+                document.getElementById('root').appendChild(textElement);
+            }
+        </script>
+    </body>
+</html>
